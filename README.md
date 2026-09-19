@@ -1,4 +1,4 @@
-# AppAndroidHolaMundo
+# CocinaNadia
 
 App Android "Hola Mundo" en .NET MAUI, con Clean Architecture (4 capas en
 proyectos separados).
@@ -6,10 +6,10 @@ proyectos separados).
 ## Estructura
 
 ```
-AppAndroidHolaMundo.Domain/          # Entidades de negocio. No depende de nada.
-AppAndroidHolaMundo.Application/     # Casos de uso + puertos (interfaces).
-AppAndroidHolaMundo.Infrastructure/  # Implementaciones concretas de los puertos.
-AppAndroidHolaMundo.Presentation/    # App .NET MAUI (UI), target: net10.0-android.
+CocinaNadia.Domain/          # Entidades de negocio. No depende de nada.
+CocinaNadia.Application/     # Casos de uso + puertos (interfaces).
+CocinaNadia.Infrastructure/  # Implementaciones concretas de los puertos.
+CocinaNadia.Presentation/    # App .NET MAUI (UI), target: net10.0-android.
 ```
 
 Flujo de dependencias: `Presentation` → `Application` + `Infrastructure` →
@@ -20,7 +20,7 @@ la inyección de dependencias configurada en `MauiProgram.cs`.
 ## Compilar
 
 ```bash
-dotnet build AppAndroidHolaMundo.Presentation/AppAndroidHolaMundo.Presentation.csproj
+dotnet build CocinaNadia.Presentation/CocinaNadia.Presentation.csproj
 ```
 
 No hace falta exportar `JAVA_HOME` ni `ANDROID_SDK_ROOT`: `Directory.Build.props`
@@ -32,7 +32,7 @@ fuera de rutas del sistema).
 ```bash
 export PATH="/home/rutherford/android-tools/jdk17/bin:/home/rutherford/android-tools/android-sdk/platform-tools:$PATH"
 adb devices   # verificar que el dispositivo/emulador esté conectado
-dotnet build AppAndroidHolaMundo.Presentation/AppAndroidHolaMundo.Presentation.csproj -t:Run
+dotnet build CocinaNadia.Presentation/CocinaNadia.Presentation.csproj -t:Run
 ```
 
 ## Entorno instalado

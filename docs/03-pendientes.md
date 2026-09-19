@@ -23,7 +23,7 @@ aparte al instalar. Instalando el APK a mano (`adb install`) quedaba sin
 código y abortaba al toque (`monodroid: No assemblies found...`,
 `SIGABRT`).
 
-**Fix:** en `AppAndroidHolaMundo.Presentation.csproj` se agregó
+**Fix:** en `CocinaNadia.Presentation.csproj` se agregó
 `EmbedAssembliesIntoApk=true` también para Debug, para que el APK quede
 autocontenido.
 

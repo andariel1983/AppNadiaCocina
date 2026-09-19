@@ -1,6 +1,0 @@
-<Solution>
-  <Project Path="AppAndroidHolaMundo.Application/AppAndroidHolaMundo.Application.csproj" />
-  <Project Path="AppAndroidHolaMundo.Domain/AppAndroidHolaMundo.Domain.csproj" />
-  <Project Path="AppAndroidHolaMundo.Infrastructure/AppAndroidHolaMundo.Infrastructure.csproj" />
-  <Project Path="AppAndroidHolaMundo.Presentation/AppAndroidHolaMundo.Presentation.csproj" />
-</Solution>

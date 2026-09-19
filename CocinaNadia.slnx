@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="CocinaNadia.Application/CocinaNadia.Application.csproj" />
+  <Project Path="CocinaNadia.Domain/CocinaNadia.Domain.csproj" />
+  <Project Path="CocinaNadia.Infrastructure/CocinaNadia.Infrastructure.csproj" />
+  <Project Path="CocinaNadia.Presentation/CocinaNadia.Presentation.csproj" />
+</Solution>

@@ -7,7 +7,7 @@
             "request": "launch",
             "preLaunchTask": "build-android",
             "cwd": "${workspaceFolder}",
-            "project": "${workspaceFolder}/AppAndroidHolaMundo.Presentation/AppAndroidHolaMundo.Presentation.csproj",
+            "project": "${workspaceFolder}/CocinaNadia.Presentation/CocinaNadia.Presentation.csproj",
             "target": "android"
         }
     ]

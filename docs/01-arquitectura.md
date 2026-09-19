@@ -6,16 +6,16 @@ proyectos `.csproj` separados dentro de la misma solución).
 ## Proyectos y dependencias
 
 ```
-AppAndroidHolaMundo.Presentation  (net10.0-android, MAUI)
+CocinaNadia.Presentation  (net10.0-android, MAUI)
         │
-        ├──> AppAndroidHolaMundo.Application
+        ├──> CocinaNadia.Application
         │           │
-        │           └──> AppAndroidHolaMundo.Domain
+        │           └──> CocinaNadia.Domain
         │
-        └──> AppAndroidHolaMundo.Infrastructure
+        └──> CocinaNadia.Infrastructure
                     │
-                    ├──> AppAndroidHolaMundo.Domain
-                    └──> AppAndroidHolaMundo.Application
+                    ├──> CocinaNadia.Domain
+                    └──> CocinaNadia.Application
 ```
 
 - **Domain** (`Saludo.cs`): entidad de negocio. No depende de ninguna otra capa.
@@ -32,6 +32,6 @@ AppAndroidHolaMundo.Presentation  (net10.0-android, MAUI)
 
 `App.xaml.cs` tuvo que calificar el tipo base de MAUI como
 `Microsoft.Maui.Controls.Application` (en vez de solo `Application`), porque
-el proyecto `AppAndroidHolaMundo.Application` (capa Clean Architecture)
-comparte el namespace raíz `AppAndroidHolaMundo` con `Presentation`, y el
+el proyecto `CocinaNadia.Application` (capa Clean Architecture)
+comparte el namespace raíz `CocinaNadia` con `Presentation`, y el
 compilador prioriza la resolución de namespace sobre el `using` de MAUI.

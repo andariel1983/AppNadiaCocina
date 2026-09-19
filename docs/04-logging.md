@@ -9,13 +9,13 @@ celular físico del usuario por Wi-Fi.
 
 ```bash
 export PATH="/home/rutherford/android-tools/android-sdk/platform-tools:$PATH"
-adb logcat -s AppAndroidHolaMundo:V
+adb logcat -s CocinaNadia:V
 ```
 
 Todo lo que loguea cualquier capa (Domain no loguea porque no debe
 depender de nada; Application e Infrastructure vía `ILogger<T>`;
 Presentation vía `Logger`/excepciones globales) sale bajo el tag fijo
-`AppAndroidHolaMundo`, sin importar de qué capa venga.
+`CocinaNadia`, sin importar de qué capa venga.
 
 ## Piezas
 
@@ -38,7 +38,7 @@ La primera versión de `Logger.cs` envolvía las llamadas a
 `Android.Util.Log` en `#if ANDROID ... #endif`. Se comprobó con:
 
 ```bash
-dotnet build AppAndroidHolaMundo.Presentation.csproj -f net10.0-android -getProperty:DefineConstants
+dotnet build CocinaNadia.Presentation.csproj -f net10.0-android -getProperty:DefineConstants
 # devolvió: TRACE;DEBUG   (sin "ANDROID")
 ```
 
