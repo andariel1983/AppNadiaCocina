@@ -1,0 +1,5 @@
+{
+    "dotnet-maui.androidSdkPath": "/home/rutherford/android-tools/android-sdk",
+    "dotnet-maui.javaSdkPath": "/home/rutherford/android-tools/jdk17",
+    "dotnet.defaultSolution": "AppAndroidHolaMundo.slnx"
+}

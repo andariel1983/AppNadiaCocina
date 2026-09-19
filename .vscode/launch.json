@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Depurar en Android (MAUI)",
+            "type": "maui",
+            "request": "launch",
+            "preLaunchTask": "build-android",
+            "cwd": "${workspaceFolder}",
+            "project": "${workspaceFolder}/AppAndroidHolaMundo.Presentation/AppAndroidHolaMundo.Presentation.csproj",
+            "target": "android"
+        }
+    ]
+}
